@@ -8,18 +8,32 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBOutlet weak var bubbleDrawer: BubbleView!
+    var shouldPop = false;
+    
+    @IBAction func drawBubble(sender: UITapGestureRecognizer) {
+        if shouldPop
+        {
+            bubbleDrawer.pop(sender.locationInView(bubbleDrawer));
+            return;
+        }
+        bubbleDrawer.drawBubble(sender.locationInView(bubbleDrawer));
+        
+    }
+    @IBAction func clear() {
+        bubbleDrawer.clear();
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func undo() {
+        bubbleDrawer.undo();
     }
-
-
+    
+    @IBAction func pop(sender: UISwitch) {
+        shouldPop = !shouldPop;
+    }
+    
 }
 

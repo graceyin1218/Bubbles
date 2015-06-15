@@ -7,7 +7,6 @@
 //
 
 import UIKit
-//import Darwin
 
 class BubbleView: UIView {
 
@@ -27,7 +26,7 @@ class BubbleView: UIView {
         {
             center = c;
             radius = CGFloat(r);
-            color = UIColor(red: CGFloat(Double(arc4random_uniform(1000))/1000.0), green: CGFloat(Double(arc4random_uniform(1000))/1000.0), blue: CGFloat(Double(arc4random_uniform(1000))/1000.0), alpha: 0.5);
+            color = UIColor(red: CGFloat(Double(arc4random_uniform(1000))/1000.0), green: CGFloat(Double(arc4random_uniform(1000))/1000.0), blue: CGFloat(Double(arc4random_uniform(1000))/1000.0), alpha: 0.9);
         }
         func contains(point: CGPoint)-> Bool
         {
@@ -39,23 +38,33 @@ class BubbleView: UIView {
     override func drawRect(rect: CGRect) {
         //backgroundColor = UIColor.lightGrayColor();
         
-        if !shouldPop
+        if shouldPop && !bubbles.isEmpty
         {
-            for bubble in bubbles
+            let maxIndex = bubbles.count-1;
+            for i in 0...maxIndex
             {
-                let b = UIBezierPath(arcCenter: bubble.center, radius: bubble.radius, startAngle: 0, endAngle: CGFloat(2*M_PI), clockwise: true);
-                bubble.color.set();
-                b.fill();
+                if bubbles[maxIndex-i].contains(poke)
+                {
+                    bubbles.removeAtIndex(maxIndex-i);
+                    break;
+                }
             }
-            return;
+            
+            bubbles.reverse();
+            shouldPop = false;
         }
         
-        shouldPop = false;
+        for bubble in bubbles
+        {
+            let b = UIBezierPath(arcCenter: bubble.center, radius: bubble.radius, startAngle: 0, endAngle: CGFloat(2*M_PI), clockwise: true);
+            bubble.color.set();
+            b.fill();
+        }
     }
     
     func pop(location: CGPoint)
     {
-        
+        poke = location;
         shouldPop = true;
         setNeedsDisplay();
     }
