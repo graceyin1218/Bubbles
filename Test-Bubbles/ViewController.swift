@@ -15,16 +15,18 @@ class ViewController: UIViewController {
     var shouldPop = false;
     
 // Swift 1.2
+/*
     override func supportedInterfaceOrientations() -> Int{
         return Int(UIInterfaceOrientationMask.All.rawValue);
     }
+*/
     
-/* Swift 2
+// Swift 2
     override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask
     {
         return UIInterfaceOrientationMask.All;
     }
-*/
+
     @IBAction func drawBubble(sender: UITapGestureRecognizer) {
         if shouldPop
         {

@@ -18,24 +18,24 @@ class BubbleView: UIView {
 
     
     //Used for relocating bubbles after rotation
-    let nc = NSNotificationCenter.defaultCenter();
+    //let nc = NSNotificationCenter.defaultCenter();
 
     //Used for generating bubbles randomly
     var i: Int;
     var timer: NSTimer!
     
-// Swift 2 needs init?(coder...
-    required init(coder aDecoder: NSCoder) {
-        
+    
+//Swift 2
+    required init?(coder aDecoder: NSCoder)
+//Swift 1.2
+//  required init(coder aDecoder: NSCoder)
+    {
         i = 0
         
         super.init(coder: aDecoder)
         
-//        nc.addObserver(self, selector: "rotated", name:UIDeviceOrientationDidChangeNotification, object:nil);
-        
+        //nc.addObserver(self, selector: "rotated", name:UIDeviceOrientationDidChangeNotification, object:nil);
     }
-
-    
     
     struct Bubble {
         var center: CGPoint;
@@ -117,14 +117,14 @@ class BubbleView: UIView {
             //and drawRandomBubble needs to be on the main queue.
         
         timer = NSTimer(timeInterval: 0.1, target: self, selector: "drawRandomBubble", userInfo: nil, repeats: true)
-        
-        dispatch_async(dispatch_get_global_queue(Int(QOS_CLASS_USER_INITIATED.value), 0))
+//Swift 2
+        dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INITIATED, 0))
+//Swift 1.2
+//      dispatch_async(dispatch_get_global_queue(Int(QOS_CLASS_USER_INITIATED.value), 0))
         {
-            println("generateBubbles()")
             NSRunLoop.mainRunLoop().addTimer(self.timer, forMode: NSDefaultRunLoopMode)
             while (self.i < 10) {}
             self.i = 0
-            println("invalidated timer")
             self.timer.invalidate()
         }
     }
@@ -148,4 +148,5 @@ class BubbleView: UIView {
         }
     }
 */
+    
 }
