@@ -15,6 +15,26 @@ class BubbleView: UIView {
     var shouldPop = false;
     
     var poke = CGPoint();
+
+    
+    //Used for relocating bubbles after rotation
+    let nc = NSNotificationCenter.defaultCenter();
+
+    //Used for generating bubbles randomly
+    var i: Int;
+    var timer: NSTimer!
+    
+// Swift 2 needs init?(coder...
+    required init(coder aDecoder: NSCoder) {
+        
+        i = 0
+        
+        super.init(coder: aDecoder)
+        
+//        nc.addObserver(self, selector: "rotated", name:UIDeviceOrientationDidChangeNotification, object:nil);
+        
+    }
+
     
     
     struct Bubble {
@@ -91,4 +111,41 @@ class BubbleView: UIView {
         }
     }
 
+    func generateBubbles()
+    {
+        //Need to run timer and drawRandomBubble on separate queues.
+            //and drawRandomBubble needs to be on the main queue.
+        
+        timer = NSTimer(timeInterval: 0.1, target: self, selector: "drawRandomBubble", userInfo: nil, repeats: true)
+        
+        dispatch_async(dispatch_get_global_queue(Int(QOS_CLASS_USER_INITIATED.value), 0))
+        {
+            println("generateBubbles()")
+            NSRunLoop.mainRunLoop().addTimer(self.timer, forMode: NSDefaultRunLoopMode)
+            while (self.i < 10) {}
+            self.i = 0
+            println("invalidated timer")
+            self.timer.invalidate()
+        }
+    }
+    
+    func drawRandomBubble()
+    {
+        let center = CGPointMake(CGFloat(arc4random_uniform(UInt32(self.bounds.width))), CGFloat(arc4random_uniform(UInt32(self.bounds.height))))
+        drawBubble(center)
+        i++
+        
+    }
+
+/*
+    // for relocating bubbles after rotations
+    func rotated()
+    {
+        for bubble in bubbles
+        {
+            var x = arc4random_uniform(...)
+            var point: CGPoint = CGPointMake(...)
+        }
+    }
+*/
 }

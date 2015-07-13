@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6B048A70-E5FE-45C1-B901-0B879B887352</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>21939441AC85AC1B2A8865DB89898D884B19AB2B</key>
+		<string>https://github.com/graceyin1218/Bubbles.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Test-Bubbles.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>21939441AC85AC1B2A8865DB89898D884B19AB2B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/graceyin1218/Bubbles.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>21939441AC85AC1B2A8865DB89898D884B19AB2B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>21939441AC85AC1B2A8865DB89898D884B19AB2B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Test-Bubbles</string>
+		</dict>
+	</array>
+</dict>
+</plist>

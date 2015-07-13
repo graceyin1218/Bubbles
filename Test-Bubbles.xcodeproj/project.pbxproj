@@ -13,6 +13,7 @@
 		3F35AB441B2DE8F800071265 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F35AB431B2DE8F800071265 /* Images.xcassets */; };
 		3F35AB471B2DE8F800071265 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F35AB451B2DE8F800071265 /* LaunchScreen.xib */; };
 		3F35AB531B2DE8F800071265 /* Test_BubblesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35AB521B2DE8F800071265 /* Test_BubblesTests.swift */; };
+		3F35AB611B2E81BE00071265 /* BubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35AB601B2E81BE00071265 /* BubbleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		3F35AB4C1B2DE8F800071265 /* Test-BubblesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Test-BubblesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F35AB511B2DE8F800071265 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F35AB521B2DE8F800071265 /* Test_BubblesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_BubblesTests.swift; sourceTree = "<group>"; };
+		3F35AB601B2E81BE00071265 /* BubbleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				3F35AB431B2DE8F800071265 /* Images.xcassets */,
 				3F35AB451B2DE8F800071265 /* LaunchScreen.xib */,
 				3F35AB3A1B2DE8F800071265 /* Supporting Files */,
+				3F35AB601B2E81BE00071265 /* BubbleView.swift */,
 			);
 			path = "Test-Bubbles";
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 		3F35AB2F1B2DE8F700071265 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Grace Yin";
 				TargetAttributes = {
@@ -212,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F35AB611B2E81BE00071265 /* BubbleView.swift in Sources */,
 				3F35AB3F1B2DE8F800071265 /* ViewController.swift in Sources */,
 				3F35AB3D1B2DE8F800071265 /* AppDelegate.swift in Sources */,
 			);
@@ -411,6 +416,7 @@
 				3F35AB581B2DE8F800071265 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F35AB591B2DE8F800071265 /* Build configuration list for PBXNativeTarget "Test-BubblesTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +425,7 @@
 				3F35AB5B1B2DE8F800071265 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

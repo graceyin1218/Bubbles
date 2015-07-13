@@ -1,0 +1,193 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'coffee-script' ]
+2 info using npm@2.10.1
+3 info using node@v0.12.4
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'coffee-script', null ]
+7 verbose cache add spec coffee-script
+8 silly cache add parsed spec { raw: 'coffee-script',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'coffee-script',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 silly addNamed coffee-script@*
+10 verbose addNamed "*" is a valid semver range for coffee-script
+11 silly addNameRange { name: 'coffee-script', range: '*', hasData: false }
+12 silly mapToRegistry name coffee-script
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/coffee-script
+16 verbose addNameRange registry:https://registry.npmjs.org/coffee-script not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/coffee-script
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 12:55:47 PM
+20 verbose request id 235c959217f6abe0
+21 verbose etag "BR3MB341TBV418S11THAPFMX3"
+22 http request GET https://registry.npmjs.org/coffee-script
+23 http 200 https://registry.npmjs.org/coffee-script
+24 silly get cb [ 200,
+24 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+24 silly get     etag: '"CKZ76ZP73SYBP0M399GHK7QHP"',
+24 silly get     'content-type': 'application/json',
+24 silly get     'cache-control': 'max-age=60',
+24 silly get     'content-length': '38942',
+24 silly get     'accept-ranges': 'bytes',
+24 silly get     date: 'Sat, 20 Jun 2015 16:55:49 GMT',
+24 silly get     via: '1.1 varnish',
+24 silly get     age: '14',
+24 silly get     connection: 'keep-alive',
+24 silly get     'x-served-by': 'cache-atl6233-ATL',
+24 silly get     'x-cache': 'HIT',
+24 silly get     'x-cache-hits': '2',
+24 silly get     'x-timer': 'S1434819349.003594,VS0,VE0',
+24 silly get     vary: 'Accept' } ]
+25 verbose get saving coffee-script to /Users/graceyin/.npm/registry.npmjs.org/coffee-script/.cache.json
+26 silly addNameRange number 2 { name: 'coffee-script', range: '*', hasData: true }
+27 silly addNameRange versions [ 'coffee-script',
+27 silly addNameRange   [ '0.7.0',
+27 silly addNameRange     '0.7.1',
+27 silly addNameRange     '0.7.2',
+27 silly addNameRange     '0.9.0',
+27 silly addNameRange     '0.9.1',
+27 silly addNameRange     '0.9.2',
+27 silly addNameRange     '0.9.3',
+27 silly addNameRange     '0.9.4',
+27 silly addNameRange     '0.9.5',
+27 silly addNameRange     '0.9.6',
+27 silly addNameRange     '1.0.0',
+27 silly addNameRange     '1.0.1',
+27 silly addNameRange     '1.1.0',
+27 silly addNameRange     '1.1.1',
+27 silly addNameRange     '1.1.2',
+27 silly addNameRange     '1.1.3',
+27 silly addNameRange     '1.2.0',
+27 silly addNameRange     '1.3.0',
+27 silly addNameRange     '1.3.1',
+27 silly addNameRange     '1.3.2',
+27 silly addNameRange     '1.3.3',
+27 silly addNameRange     '1.4.0',
+27 silly addNameRange     '1.5.0',
+27 silly addNameRange     '1.6.0',
+27 silly addNameRange     '1.6.1',
+27 silly addNameRange     '1.6.2',
+27 silly addNameRange     '1.6.3',
+27 silly addNameRange     '1.7.0',
+27 silly addNameRange     '1.7.1',
+27 silly addNameRange     '1.8.0',
+27 silly addNameRange     '1.9.0',
+27 silly addNameRange     '1.9.1',
+27 silly addNameRange     '1.9.2',
+27 silly addNameRange     '1.9.3' ] ]
+28 silly addNamed coffee-script@1.9.3
+29 verbose addNamed "1.9.3" is a plain semver version for coffee-script
+30 silly mapToRegistry name coffee-script
+31 silly mapToRegistry using default registry
+32 silly mapToRegistry registry https://registry.npmjs.org/
+33 silly mapToRegistry uri https://registry.npmjs.org/coffee-script
+34 verbose addRemoteTarball https://registry.npmjs.org/coffee-script/-/coffee-script-1.9.3.tgz not in flight; adding
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/coffee-script/-/coffee-script-1.9.3.tgz',
+35 verbose addRemoteTarball   '596e6e83fcfcb67c5964ab70d444beff0ac04ac7' ]
+36 info retry fetch attempt 1 at 12:55:47 PM
+37 info attempt registry request try #1 at 12:55:47 PM
+38 http fetch GET https://registry.npmjs.org/coffee-script/-/coffee-script-1.9.3.tgz
+39 http fetch 200 https://registry.npmjs.org/coffee-script/-/coffee-script-1.9.3.tgz
+40 silly fetchAndShaCheck shasum 596e6e83fcfcb67c5964ab70d444beff0ac04ac7
+41 verbose addTmpTarball /var/folders/vy/qf73m2_d71b11yp8tzkq8xpm0000gn/T/npm-15779-bcedf3ba/registry.npmjs.org/coffee-script/-/coffee-script-1.9.3.tgz not in flight; adding
+42 verbose addTmpTarball already have metadata; skipping unpack for coffee-script@1.9.3
+43 silly cache afterAdd coffee-script@1.9.3
+44 verbose afterAdd /Users/graceyin/.npm/coffee-script/1.9.3/package/package.json not in flight; writing
+45 verbose afterAdd /Users/graceyin/.npm/coffee-script/1.9.3/package/package.json written
+46 silly install resolved [ { name: 'coffee-script',
+46 silly install resolved     description: 'Unfancy JavaScript',
+46 silly install resolved     keywords: [ 'javascript', 'language', 'coffeescript', 'compiler' ],
+46 silly install resolved     author: { name: 'Jeremy Ashkenas' },
+46 silly install resolved     version: '1.9.3',
+46 silly install resolved     license: 'MIT',
+46 silly install resolved     engines: { node: '>=0.8.0' },
+46 silly install resolved     directories: { lib: './lib/coffee-script' },
+46 silly install resolved     main: './lib/coffee-script/coffee-script',
+46 silly install resolved     bin: { coffee: './bin/coffee', cake: './bin/cake' },
+46 silly install resolved     preferGlobal: true,
+46 silly install resolved     scripts:
+46 silly install resolved      { test: 'node ./bin/cake test',
+46 silly install resolved        'test-harmony': 'node --harmony ./bin/cake test' },
+46 silly install resolved     homepage: 'http://coffeescript.org',
+46 silly install resolved     bugs: { url: 'https://github.com/jashkenas/coffeescript/issues' },
+46 silly install resolved     repository:
+46 silly install resolved      { type: 'git',
+46 silly install resolved        url: 'git://github.com/jashkenas/coffeescript.git' },
+46 silly install resolved     devDependencies:
+46 silly install resolved      { 'uglify-js': '~2.2',
+46 silly install resolved        jison: '>=0.2.0',
+46 silly install resolved        'highlight.js': '~8.0.0',
+46 silly install resolved        underscore: '~1.5.2',
+46 silly install resolved        docco: '~0.7.0' },
+46 silly install resolved     gitHead: 'c37f284771e10b36239c714dcc40827510a6df5f',
+46 silly install resolved     _id: 'coffee-script@1.9.3',
+46 silly install resolved     _shasum: '596e6e83fcfcb67c5964ab70d444beff0ac04ac7',
+46 silly install resolved     _from: 'coffee-script@*',
+46 silly install resolved     _npmVersion: '1.4.28',
+46 silly install resolved     _npmUser: { name: 'jashkenas', email: 'jashkenas@gmail.com' },
+46 silly install resolved     maintainers: [ [Object], [Object] ],
+46 silly install resolved     dist:
+46 silly install resolved      { shasum: '596e6e83fcfcb67c5964ab70d444beff0ac04ac7',
+46 silly install resolved        tarball: 'http://registry.npmjs.org/coffee-script/-/coffee-script-1.9.3.tgz' },
+46 silly install resolved     _resolved: 'https://registry.npmjs.org/coffee-script/-/coffee-script-1.9.3.tgz' } ]
+47 info install coffee-script@1.9.3 into /usr/local/lib
+48 info installOne coffee-script@1.9.3
+49 verbose installOne of coffee-script to /usr/local/lib not in flight; installing
+50 verbose lock using /Users/graceyin/.npm/_locks/coffee-script-7b01d0c2a8e2b5ed.lock for /usr/local/lib/node_modules/coffee-script
+51 silly install write writing coffee-script 1.9.3 to /usr/local/lib/node_modules/coffee-script
+52 verbose unbuild lib/node_modules/coffee-script
+53 info preuninstall coffee-script@1.8.0
+54 info uninstall coffee-script@1.8.0
+55 verbose unbuild rmStuff coffee-script@1.8.0 from /usr/local/lib/node_modules
+56 silly gentlyRm /usr/local/bin/coffee is being gently removed
+57 silly gentlyRm verifying /usr/local is an npm working directory
+58 silly gentlyRm /usr/local/bin/cake is being gently removed
+59 silly gentlyRm verifying /usr/local is an npm working directory
+60 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+61 silly gentlyRm deletion target /usr/local/bin/coffee is under /usr/local
+62 verbose gentlyRm vacuuming from /usr/local/bin/coffee up to /usr/local
+63 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+64 silly gentlyRm deletion target /usr/local/bin/cake is under /usr/local
+65 verbose gentlyRm vacuuming from /usr/local/bin/cake up to /usr/local
+66 silly vacuum-fs removing /usr/local/bin/coffee
+67 silly vacuum-fs removing /usr/local/bin/cake
+68 verbose unlock done using /Users/graceyin/.npm/_locks/coffee-script-7b01d0c2a8e2b5ed.lock for /usr/local/lib/node_modules/coffee-script
+69 verbose stack Error: EACCES, unlink '/usr/local/bin/coffee'
+69 verbose stack     at Error (native)
+70 verbose cwd /Users/graceyin/Desktop/XCode stuff/Test-Bubbles/Test-Bubbles
+71 error Darwin 14.3.0
+72 error argv "node" "/usr/local/bin/npm" "install" "-g" "coffee-script"
+73 error node v0.12.4
+74 error npm  v2.10.1
+75 error path /usr/local/bin/coffee
+76 error code EACCES
+77 error errno -13
+78 error Error: EACCES, unlink '/usr/local/bin/coffee'
+78 error     at Error (native)
+78 error  { [Error: EACCES, unlink '/usr/local/bin/coffee'] errno: -13, code: 'EACCES', path: '/usr/local/bin/coffee' }
+79 error Please try running this command again as root/Administrator.
+80 verbose exit [ -13, true ]
+81 verbose unbuild lib/node_modules/coffee-script
+82 info preuninstall coffee-script@1.8.0
+83 info uninstall coffee-script@1.8.0
+84 verbose unbuild rmStuff coffee-script@1.8.0 from /usr/local/lib/node_modules
+85 silly gentlyRm /usr/local/bin/coffee is being gently removed
+86 silly gentlyRm verifying /usr/local is an npm working directory
+87 silly gentlyRm /usr/local/bin/cake is being gently removed
+88 silly gentlyRm verifying /usr/local is an npm working directory
+89 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+90 silly gentlyRm deletion target /usr/local/bin/coffee is under /usr/local
+91 verbose gentlyRm vacuuming from /usr/local/bin/coffee up to /usr/local
+92 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+93 silly gentlyRm deletion target /usr/local/bin/cake is under /usr/local
+94 verbose gentlyRm vacuuming from /usr/local/bin/cake up to /usr/local
+95 silly vacuum-fs removing /usr/local/bin/coffee
+96 silly vacuum-fs removing /usr/local/bin/cake
+97 error error rolling back Error: EACCES, unlink '/usr/local/bin/coffee'
+97 error error rolling back     at Error (native)
+97 error error rolling back  { [Error: EACCES, unlink '/usr/local/bin/coffee'] errno: -13, code: 'EACCES', path: '/usr/local/bin/coffee' }
